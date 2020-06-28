@@ -10,9 +10,11 @@ import SwiftUI
 
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
+
 struct ContentView: View {
     @State private var username: String = ""
     @State private var password: String = ""
+    @ObservedObject private var httpAuthManager = HttpAuth()
     var body: some View {
         VStack {
             WelcomeLabel()
@@ -27,13 +29,15 @@ struct ContentView: View {
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20.0)
-            Button(action: {
-                
-            }) {
+            Button(action: loginHandler) {
                 LoginButtonContent()
             }
         }
         .padding()
+    }
+    
+    private func loginHandler() -> Void {
+        self.httpAuthManager.postAuth(username: self.username, password: self.password)
     }
 }
 

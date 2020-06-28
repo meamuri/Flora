@@ -15,6 +15,7 @@
 		EBC2A7D424A9135A00F9F6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC2A7D224A9135A00F9F6BE /* LaunchScreen.storyboard */; };
 		EBC2A7DF24A9135A00F9F6BE /* FloraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7DE24A9135A00F9F6BE /* FloraTests.swift */; };
 		EBC2A7EA24A9135A00F9F6BE /* FloraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7E924A9135A00F9F6BE /* FloraUITests.swift */; };
+		EBC2A7F924A92F4900F9F6BE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7F824A92F4900F9F6BE /* HttpAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EBC2A7E524A9135A00F9F6BE /* FloraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC2A7E924A9135A00F9F6BE /* FloraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloraUITests.swift; sourceTree = "<group>"; };
 		EBC2A7EB24A9135A00F9F6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC2A7F824A92F4900F9F6BE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		EBC2A7C624A9135900F9F6BE /* Flora */ = {
 			isa = PBXGroup;
 			children = (
+				EBC2A7F724A92EEA00F9F6BE /* Auth */,
 				EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */,
 				EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */,
 				EBC2A7CB24A9135900F9F6BE /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				EBC2A7EB24A9135A00F9F6BE /* Info.plist */,
 			);
 			path = FloraUITests;
+			sourceTree = "<group>";
+		};
+		EBC2A7F724A92EEA00F9F6BE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EBC2A7F824A92F4900F9F6BE /* HttpAuth.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				EBC2A7C824A9135900F9F6BE /* AppDelegate.swift in Sources */,
 				EBC2A7CA24A9135900F9F6BE /* SceneDelegate.swift in Sources */,
 				EBC2A7CC24A9135900F9F6BE /* ContentView.swift in Sources */,
+				EBC2A7F924A92F4900F9F6BE /* HttpAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
