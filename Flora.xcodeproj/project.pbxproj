@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB4847E424A94BAD00E92106 /* FloraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4847E324A94BAD00E92106 /* FloraRouter.swift */; };
 		EBC2A7C824A9135900F9F6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */; };
 		EBC2A7CA24A9135900F9F6BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */; };
-		EBC2A7CC24A9135900F9F6BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7CB24A9135900F9F6BE /* ContentView.swift */; };
+		EBC2A7CC24A9135900F9F6BE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7CB24A9135900F9F6BE /* LoginView.swift */; };
 		EBC2A7CE24A9135A00F9F6BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC2A7CD24A9135A00F9F6BE /* Assets.xcassets */; };
 		EBC2A7D124A9135A00F9F6BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC2A7D024A9135A00F9F6BE /* Preview Assets.xcassets */; };
 		EBC2A7D424A9135A00F9F6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC2A7D224A9135A00F9F6BE /* LaunchScreen.storyboard */; };
 		EBC2A7DF24A9135A00F9F6BE /* FloraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7DE24A9135A00F9F6BE /* FloraTests.swift */; };
 		EBC2A7EA24A9135A00F9F6BE /* FloraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7E924A9135A00F9F6BE /* FloraUITests.swift */; };
 		EBC2A7F924A92F4900F9F6BE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7F824A92F4900F9F6BE /* HttpAuth.swift */; };
+		EBC2A7FB24A942C000F9F6BE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7FA24A942C000F9F6BE /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB4847E324A94BAD00E92106 /* FloraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloraRouter.swift; sourceTree = "<group>"; };
 		EBC2A7C424A9135900F9F6BE /* Flora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBC2A7CB24A9135900F9F6BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBC2A7CB24A9135900F9F6BE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EBC2A7CD24A9135A00F9F6BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC2A7D024A9135A00F9F6BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC2A7D324A9135A00F9F6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		EBC2A7E924A9135A00F9F6BE /* FloraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloraUITests.swift; sourceTree = "<group>"; };
 		EBC2A7EB24A9135A00F9F6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC2A7F824A92F4900F9F6BE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
+		EBC2A7FA24A942C000F9F6BE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB4847E224A94B8000E92106 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				EB4847E324A94BAD00E92106 /* FloraRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		EBC2A7BB24A9135900F9F6BE = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +113,12 @@
 		EBC2A7C624A9135900F9F6BE /* Flora */ = {
 			isa = PBXGroup;
 			children = (
+				EB4847E224A94B8000E92106 /* Routing */,
 				EBC2A7F724A92EEA00F9F6BE /* Auth */,
 				EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */,
 				EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */,
-				EBC2A7CB24A9135900F9F6BE /* ContentView.swift */,
+				EBC2A7CB24A9135900F9F6BE /* LoginView.swift */,
+				EBC2A7FA24A942C000F9F6BE /* RootView.swift */,
 				EBC2A7CD24A9135A00F9F6BE /* Assets.xcassets */,
 				EBC2A7D224A9135A00F9F6BE /* LaunchScreen.storyboard */,
 				EBC2A7D524A9135A00F9F6BE /* Info.plist */,
@@ -279,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC2A7C824A9135900F9F6BE /* AppDelegate.swift in Sources */,
+				EB4847E424A94BAD00E92106 /* FloraRouter.swift in Sources */,
 				EBC2A7CA24A9135900F9F6BE /* SceneDelegate.swift in Sources */,
-				EBC2A7CC24A9135900F9F6BE /* ContentView.swift in Sources */,
+				EBC2A7FB24A942C000F9F6BE /* RootView.swift in Sources */,
+				EBC2A7CC24A9135900F9F6BE /* LoginView.swift in Sources */,
 				EBC2A7F924A92F4900F9F6BE /* HttpAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

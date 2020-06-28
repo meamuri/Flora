@@ -11,10 +11,11 @@ import SwiftUI
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 
-struct ContentView: View {
+struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @ObservedObject private var httpAuthManager = HttpAuth()
+    @ObservedObject var floraRouter: FloraRouter
     var body: some View {
         VStack {
             WelcomeLabel()
@@ -38,12 +39,13 @@ struct ContentView: View {
     
     private func loginHandler() -> Void {
         self.httpAuthManager.postAuth(username: self.username, password: self.password)
+        floraRouter.currentPage = .table
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView(floraRouter: FloraRouter())
     }
 }
 
