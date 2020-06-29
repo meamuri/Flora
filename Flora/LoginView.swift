@@ -14,7 +14,7 @@ let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    @ObservedObject private var httpAuthManager = HttpAuth()
+    @ObservedObject var httpAuthManager: HttpAuth
     @ObservedObject var floraRouter: FloraRouter
     var body: some View {
         VStack {
@@ -45,7 +45,7 @@ struct LoginView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(floraRouter: FloraRouter())
+        LoginView(httpAuthManager: HttpAuth(), floraRouter: FloraRouter())
     }
 }
 

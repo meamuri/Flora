@@ -10,12 +10,13 @@ import SwiftUI
 
 struct RootView: View {
     @ObservedObject var floraRouter: FloraRouter
+    @ObservedObject var httpAuthManager: HttpAuth
     var body: some View {
         VStack {
             if floraRouter.currentPage == .login {
-                LoginView(floraRouter: floraRouter)
+                LoginView(httpAuthManager: httpAuthManager, floraRouter: floraRouter)
             } else if floraRouter.currentPage == .table {
-                Text("welcome here dude")
+                FloraView(apiClient: ApiClient())
             }
         }
     }
@@ -23,6 +24,6 @@ struct RootView: View {
 
 struct Rootview_Previews: PreviewProvider {
     static var previews: some View {
-        RootView(floraRouter: FloraRouter())
+        RootView(floraRouter: FloraRouter(), httpAuthManager: HttpAuth())
     }
 }

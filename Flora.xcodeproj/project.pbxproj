@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB4847E424A94BAD00E92106 /* FloraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4847E324A94BAD00E92106 /* FloraRouter.swift */; };
+		EB4847E724A9CB6900E92106 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4847E624A9CB6900E92106 /* ApiClient.swift */; };
+		EB4847E924A9CBD000E92106 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4847E824A9CBD000E92106 /* Schema.swift */; };
+		EB4847EC24A9D5CC00E92106 /* FloraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4847EB24A9D5CC00E92106 /* FloraView.swift */; };
 		EBC2A7C824A9135900F9F6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */; };
 		EBC2A7CA24A9135900F9F6BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */; };
 		EBC2A7CC24A9135900F9F6BE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2A7CB24A9135900F9F6BE /* LoginView.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		EB4847E324A94BAD00E92106 /* FloraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloraRouter.swift; sourceTree = "<group>"; };
+		EB4847E624A9CB6900E92106 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		EB4847E824A9CBD000E92106 /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		EB4847EB24A9D5CC00E92106 /* FloraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloraView.swift; sourceTree = "<group>"; };
 		EBC2A7C424A9135900F9F6BE /* Flora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBC2A7C924A9135900F9F6BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,22 @@
 			path = Routing;
 			sourceTree = "<group>";
 		};
+		EB4847E524A9CB5500E92106 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				EB4847E824A9CBD000E92106 /* Schema.swift */,
+				EB4847E624A9CB6900E92106 /* ApiClient.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		EB4847EA24A9CC3F00E92106 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
 		EBC2A7BB24A9135900F9F6BE = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,8 @@
 		EBC2A7C624A9135900F9F6BE /* Flora */ = {
 			isa = PBXGroup;
 			children = (
+				EB4847EA24A9CC3F00E92106 /* Schema */,
+				EB4847E524A9CB5500E92106 /* Api */,
 				EB4847E224A94B8000E92106 /* Routing */,
 				EBC2A7F724A92EEA00F9F6BE /* Auth */,
 				EBC2A7C724A9135900F9F6BE /* AppDelegate.swift */,
@@ -123,6 +147,7 @@
 				EBC2A7D224A9135A00F9F6BE /* LaunchScreen.storyboard */,
 				EBC2A7D524A9135A00F9F6BE /* Info.plist */,
 				EBC2A7CF24A9135A00F9F6BE /* Preview Content */,
+				EB4847EB24A9D5CC00E92106 /* FloraView.swift */,
 			);
 			path = Flora;
 			sourceTree = "<group>";
@@ -292,6 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4847E924A9CBD000E92106 /* Schema.swift in Sources */,
+				EB4847E724A9CB6900E92106 /* ApiClient.swift in Sources */,
+				EB4847EC24A9D5CC00E92106 /* FloraView.swift in Sources */,
 				EBC2A7C824A9135900F9F6BE /* AppDelegate.swift in Sources */,
 				EB4847E424A94BAD00E92106 /* FloraRouter.swift in Sources */,
 				EBC2A7CA24A9135900F9F6BE /* SceneDelegate.swift in Sources */,
