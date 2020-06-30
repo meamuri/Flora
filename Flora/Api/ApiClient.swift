@@ -36,6 +36,8 @@ struct TruncatedSpeciesRecord: Decodable, Identifiable {
     let name: String
     let id: String
     var key: String { get { return id }}
+    let description: String
+    let frequency: String
 }
 
 struct SpeciesRecord: Decodable, Identifiable {

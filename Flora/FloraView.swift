@@ -12,10 +12,33 @@ struct FloraView: View {
     @ObservedObject var apiClient: ApiClient
     
     var body: some View {        
-        VStack {
-            List(self.apiClient.records) { e in
-                Text(e.name)
+        NavigationView {
+            List {
+                ForEach(self.apiClient.records) { e in
+                    NavigationLink(destination: FloraDetails(species: e)) {
+                        Text(e.name)
+                    }
+                    
+                }
             }
+        }
+    }
+}
+
+struct FloraRow: View {
+    var name: String
+    var body: some View {
+        Text("☘️☘️ \(name)")
+    }
+}
+
+struct FloraDetails: View {
+    var species: TruncatedSpeciesRecord
+    var body: some View {
+        VStack {
+            Text(species.name)
+            Text(species.frequency)
+            Text(species.description)
         }
     }
 }
