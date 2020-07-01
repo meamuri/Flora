@@ -16,9 +16,9 @@ struct FloraView: View {
             List {
                 ForEach(self.apiClient.records) { e in
                     NavigationLink(destination: FloraDetails(species: e)) {
-                        Text(e.name)
+                        FloraRow(name
+                            : e.name)
                     }
-                    
                 }
             }
         }
